@@ -55,7 +55,16 @@ Group the files and draft a message per commit.
 
 ### Step 4 — Write conventional commit messages
 
-Format:
+**If the `caveman-commit` skill is listed in the available skills**, invoke it via the Skill tool for each commit group instead of writing the message yourself:
+
+```
+Skill("caveman-commit", args="<brief description of what changed and why>")
+```
+
+Use the message it returns as-is.
+
+**If `caveman-commit` is not available**, write the message manually using this format:
+
 ```
 <type>(<optional scope>): <short summary in imperative mood>
 
